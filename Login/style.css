@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    background-color: #02041c;
+    flex-direction: column;
+    /* background-image: url('S.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+.pisb{
+    margin-bottom: 30px;
+    margin-left: 75%;
+    
+    margin-top: 2px;
+    font-size: 1.5rem;
+    color: white;
+}
+.pisb a{
+    color: white;
+    text-decoration: none;
+}
+.getstarted{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.main {
+    
+    border: solid white;
+    border-radius: 20px;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    width: 56%;
+    padding: 10px;
+    /* background-color: rgba(255 , 255 , 255 ,.1);
+    backdrop-filter: blur(1px); */
+    box-shadow: rgba(241, 232, 232, 0.893) 0px 5px 15px;
+}
+
+.logo {
+   
+    /* border-right: 0.5px solid white; */
+    width: 40%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.login {
+    /* margin-right: 40px; */
+    width: 60%;
+    height : 60;
+    /* border: 2px solid rgb(244, 240, 240); */
+    border-radius: 15px;
+    display: flex;
+    
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.login h1{
+    margin-bottom: 55px;
+    color: white;
+    text-shadow: 2px 2px 4px #02041c;
+    font-size: 2,5rem;
+    font-weight: bold;
+}
+
+.login form {
+    
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+}
+
+.login form label{
+    align-self: flex-start;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.login form input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* background-color:  #02041c ; */
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(251, 234, 234);
+    background-color: #02041c;
+    outline: none;
+}
+
+.batch{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.batch div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.batch div input{
+    margin: 0;
+}
+
+.batch div label{
+    margin-left: 15px;
+}
+
+.btn{
+    width: 50%;
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+
+}
