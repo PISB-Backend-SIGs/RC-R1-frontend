@@ -19,15 +19,25 @@
           <i class="ri-search-line"></i>
           <input type="text" name="" id="" placeholder="Search" >
         </div>
-        <ul class="responsive-table">
-          <li class="table-header">
-            <div class="col col-1">Rank</div>
-            <div class="col col-2">Player</div>
-            <div class="col col-3">Score</div>
-            <div class="col col-4">Quiz Status</div>
-            <div class="col col-5">Time Taken</div>
-          </li>
-          <li class="table-row">
+
+        <div class="responsive-table">
+
+          <ul >
+            <li class="table-header">
+              <div class="col col-1">Rank</div>
+              <div class="col col-2">Player</div>
+              <div class="col col-3">Score</div>
+          <div class="col col-4">Quiz Status</div>
+          <div class="col col-5">Time Taken</div>
+        </li>
+      </ul> 
+        <ul id="members" >
+
+
+
+          <!-- The code is in javascript using mapping  -->
+
+          <!-- <li class="table-row">
             <div class="col col-1" data-label="Rank">1</div>
             <div class="col col-2" data-label="Name">Yash Mali</div>
             <div class="col col-3" data-label="Score">26</div>
@@ -96,8 +106,13 @@
             <div class="col col-3" data-label="Score">15</div>
             <div class="col col-4" data-label="Status">Pending</div>
             <div class="col col-5">0:08:42</div>
-          </li>
-        </ul>
+          </li>-->
+        </ul> 
+
+      </div>
+
+
+
         <div class="center">
           <div class="pagination">
               <a href="#">&laquo; Previous</a>
@@ -113,4 +128,33 @@
       </div>
     
 </body>
+<script>
+  const data = [
+  { rank: 1, name: 'Yash Mali', score: 260, status: 'Complete', time: '0:01:08' },
+  { rank: 2, name: 'Sarvesh Varade', score: 240, status: 'Complete', time: '0:01:08' },
+  { rank: 3, name: 'Devaraj Shetake', score: 23, status: 'Complete', time: '0:04:05' },
+  { rank: 4, name: 'Nidhi Yadav', score: 23, status: 'Complete', time: '0:01:33' },
+  { rank: 5, name: 'Harsh Bhat', score: 22, status: 'Complete', time: '0:03:46' },
+  { rank: 6, name: 'Manas Sewatkar', score: 21, status: 'Complete', time: '0:05:13' },
+  { rank: 7, name: 'Sarthak Phadnis', score: 20, status: 'Pending', time: '0:10:23' },
+  { rank: 8, name: 'Siddharth Lalwani', score: 18, status: 'Pending', time: '0:01:54' },
+  { rank: 9, name: 'Kaushal Kulkarni', score: 16, status: 'Pending', time: '0:07:05' },
+  { rank: 10, name: 'Animesh Jain', score: 15, status: 'Pending', time: '0:08:42' }
+];
+
+const tableBody = document.getElementById('members');
+
+data.forEach(item => {
+  const row = `
+    <li class="table-row">
+      <div class="col col-1" data-label="Rank">${item.rank}</div>
+      <div class="col col-2" data-label="Name">${item.name}</div>
+      <div class="col col-3" data-label="Score">${item.score}</div>
+      <div class="col col-4" data-label="Status">${item.status}</div>
+      <div class="col col-5">${item.time}</div>
+    </li>
+  `;
+  tableBody.insertAdjacentHTML('beforeend', row);
+});
+</script>
 </html>
