@@ -5,6 +5,75 @@
     font-family: Orbitron, sans-serif;
 } */
 
+@font-face {
+    font-family: solthin;
+    src: url(solthinregular.ttf);
+  }
+  .clash-text{
+    font-family: 'solthin';
+  }
+  .wrapper{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content:flex-end !important;
+      background: #111925;
+  }
+  .pisblogo{
+    float: right; 
+    margin-left: auto; 
+    overflow: hidden;
+  }
+  
+  .Navbar2{
+    height: auto;
+  }
+  
+  .logo{
+    border-right: 3px solid #D28511;
+    padding-right: 20px;
+  }
+  .profile{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    align-self: center;
+    margin: 0px auto;
+  }
+  
+  .collapse{
+    display: flex;
+    justify-content: end;
+    padding: 0 20px;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .nav-link{
+    padding: auto 40px;
+    margin: auto 14px;
+  }
+  
+  /* .nav-link:active{
+    color:rgb(34, 255, 170);
+    display: none;
+  } */
+  .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .DP{
+    margin-top: 2px;
+    border-radius: 20px;
+    border: 2px solid #D28511;
+  }
+  
+  .prf{
+    padding: 15px 8px;
+  }
+
 .container-1 {
     margin: 50px;
 }
