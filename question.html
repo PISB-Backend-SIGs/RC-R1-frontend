@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, device-height=device-height, initial-scale=1.0" >
+    
+    <title>Question Page</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="mycontainer">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#">
+          <img src="clashwhite.png" alt="RC" height="52px" width="102px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+          <a class="nav-item nav-link active" id="navlink" href="login.html">Log In</a>
+          <a class="nav-item nav-link active" id="navlink" href="instructions.html">Instructions</a>
+          <!-- <a class="nav-item nav-link active " href="question.html">Result</a> -->
+          <a class="nav-item nav-link active" id="navlink" href="Result.html">MCQ page</a>
+          <a class="nav-item nav-link active" id="navlink" href="Leaderboard.html">Leaderboard  </a>
+          <a class="nav-item nav-link active" id="navlink" href="#">LogOut</a>
+        </div>
+        <img src="#" class="ieeelogo" alt="PISB IEEE">
+        </nav>
+      <!-- your code goes here -->
+
+      <!-- {% for message in messages %} 
+        <div class = "alert alert -{{ message.tags }} alert-dismissible fade show" role = "alert">
+            <strong>Message:</strong> {{ message }}
+                <button type = "button" class = "close" data-dismiss = "alert" aria-label = "Close">
+                    <span aria-hidden = "true">×</span>
+                </button>
+        </div>
+      {% endfor %} -->
+
+      <div class="columns">
+        <div class="column1">
+          <div class="c13">
+            <p rel="stylesheet" class="sec">SCORE : 10</p>
+            <a rel="stylesheet" href="#" class="lb"><P class="ldr">LEADERBOARD</P></a>
+          </div>
+          <div class="c12">
+            <p>LIFELINES</p>
+              <a href="#" rel="stylesheet" class="l1" id="lifelinefirst">LIFELINE 1</a>
+            <div id="L1modal" class="modal_in">
+              <!-- Modal content -->
+              <div class="modal-content_in">
+                <span class="close1">×</span>
+                <p>This is details about first lifeline</p>
+              </div>
+            </div>
+            <div rel="stylesheet" href="#" class="l2 action" id="lifelinesecond">
+              <!-- <P>LIFELINE 2</P> -->
+                <label>
+                    <input id = "line2Checked" name = "line2Checked" type = "checkbox"><span>Extra Time</span>
+                </label>
+            </div>
+            <div id="L2modal" class="modal_in">
+              <!-- Modal content -->
+              <div class="modal-content_in">
+                <span class="close2">×</span>
+                <p>This is details about second lifeline</p>
+              </div>
+            </div>
+            <br>
+            <a rel="stylesheet" href="#" class="l3" id="lifelinethird"><P>LIFELINE 3</P></a>
+            <div id="L3modal" class="modal_in">
+              <!-- Modal content -->
+              <div class="modal-content_in">
+                <span class="close3">×</span>
+                <p>This is details about third lifeline</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="column2">
+        <div class="c21">
+          <div class="tr"><h1 class="trhead"><span id="time" class="t">XX : XX<p id="timer"></p></span></h1></div>
+        </div>
+        <form method="POST" action="{% url 'QuestionView1' %}" name="name1">
+          <div class="queshead">
+            <h2 class="qh">Question No. 11</h2>
+          </div>
+          
+          <div class="question">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim dignissimos excepturi qui suscipit maxime hic mollitia ducimus nesciunt, nulla unde rem molestias rerum. Possimus impedit quo totam recusandae quae saepe vero? Animi reiciendis perspiciatis dolores id minima maxime eveniet numquam a molestias hic incidunt fugiat laborum officiis, maiores velit, eum quisquam voluptatibus at culpa ratione quis perferendis. Cumque, saepe laboriosam quos totam sit reiciendis eligendi eius excepturi odio eos minima iste ab nisi provident facere similique officia dolorum! Non animi, tenetur dolor id ullam explicabo amet commodi quibusdam, veniam aliquid eaque officia ratione accusamus pariatur, saepe illum enim facilis ipsam culpa qui dolore dignissimos illo ut? Blanditiis recusandae repellat consectetur animi delectus, consequuntur magni magnam provident libero, dicta enim ipsa placeat veniam deleniti? Id iure odio saepe porro? Quidem fugiat officia necessitatibus quas nobis suscipit explicabo ratione fugit ut laboriosam cumque laborum reprehenderit neque repellat ad sunt, ab voluptate corrupti magnam unde. Omnis placeat vitae nisi asperiores, delectus, mollitia dolores amet nam, expedita id minima? Delectus sit neque optio ut harum dolore molestias vitae, quo odio porro facere maxime iusto veniam id. Ut, nobis est fuga cupiditate nostrum minus repellendus aliquam reprehenderit perspiciatis ipsa vero explicabo accusamus sapiente provident.
+            </p>
+          </div>
+            <div class="responses">
+              <div class="opt1">
+                Response 1 :
+                <input type="number" name="res1" class="res1" id="res1" required>
+              </div>
+              <div class="opt2">
+                Response 2 :
+                <input type="number" name="res2" class="res2" id="res2" disabled>
+              </div>
+            </div>
+            <div class="sub">
+              <button type="submit" class="submit">Submit</button>
+            </div>
+      </div>
+      <!-- Footer goes here -->
+      
+      <script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        var lifelinefirst = document.getElementById("lifelinefirst");
+
+        var lifelinesecond = document.getElementById("lifelinesecond");
+
+        var lifelinethird = document.getElementById("lifelinethird");
+        
+        var L1modal = document.getElementById("L1modal");
+
+        var L2modal = document.getElementById("L2modal");
+
+        var L3modal = document.getElementById("L3modal");
+
+        var span1 = document.getElementsByClassName("close1")[0];
+
+        var span2 = document.getElementsByClassName("close2")[0];
+
+        var span3 = document.getElementsByClassName("close3")[0];
+
+        lifelinefirst.onclick = function() {
+          L1modal.style.display = "block";
+        }
+
+        lifelinesecond.onclick = function() {
+          L2modal.style.display = "block";
+        }
+
+        lifelinethird.onclick = function() {
+          L3modal.style.display = "block";
+        }
+
+        span1.onclick = function() {
+          L1modal.style.display = "none";
+        }
+
+        span2.onclick = function() {
+          L2modal.style.display = "none";
+        }
+
+        span3.onclick = function() {
+          L3modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            L1modal.style.display = "none";
+            L2modal.style.display = "none";
+            L3modal.style.display = "none";
+          }
+        }
+        
+        const button = document.getElementById('myButton');
+
+        //   setTimeout(function() {
+        //   document.getElementById("line2Checked").disabled = true;
+        //   element.parentNode.removeChild(element);
+        // }, 3000);
+
+          function countdown(seconds) {
+            
+            displayTime(seconds);
+        
+            
+            var timer = setInterval(function() {
+              seconds--;
+              displayTime(seconds);
+              if (seconds <= 0) {
+                clearInterval(timer);
+              }
+            }, 1000);
+        
+            function displayTime(seconds) {
+              
+              var minutes = Math.floor(seconds / 60);
+              var remainingSeconds = seconds % 60;
+        
+              
+              var formattedTime = ('0' + minutes).slice(-2) + ':' + ('0' + remainingSeconds).slice(-2);
+        
+              document.getElementById('timer').textContent = formattedTime;
+            }
+          }
+        
+          countdown({{second1}}); 
+
+        document.getElementById('line2Checked').addEventListener('change', function() {
+          if (this.checked) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '{% url "lifeline2_ajax" %}', true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+              if (this.readyState === 4 && this.status === 200) {
+                var response = JSON.parse(this.responseText);
+                console.log(response.message);
+              }
+            };
+            var csrf_token = document.getElementsByName('csrfmiddlewaretoken')[0].value;
+            xhr.send('csrfmiddlewaretoken=' + csrf_token + '&checkbox_value=true'); // Include CSRF token in POST data
+          }
+        });
+      </script>
+    </div>  
+    <div class="footer" >
+      <footer>
+          <p class="footertext">@PISB</p>
+      </footer>
+  </div>
+    
+  </body>
+</html>
