@@ -31,7 +31,7 @@
         </nav>
     </div>
     <div class = "container">
-        <div class="navbar">
+        <div class="navbar1">
             <h1>Result Rc</h1>
         </div>
         <div class="scorecard">
@@ -193,6 +193,7 @@
 }
 .navbar{
   padding: 0;
+  justify-content: space-between;
 }
 .nav-link{
   padding: auto 40px;
@@ -211,8 +212,8 @@
   
   } 
   .navbar-nav {
-    -ms-flex-direction: row;
-    flex-direction: row;
+    /* -ms-flex-direction: row;
+    flex-direction: row; */
     width: 100%;
     justify-content: flex-end;
   }
@@ -242,10 +243,13 @@
             'footer';
             /* grid-gap: 10px; */
         }
-        .navbar{
+        .navbar1{
             grid-area: navbar;
             justify-content: center;
             padding-top: 20px;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
         }
 
 
@@ -436,7 +440,8 @@
             }
             .navbar{
                 grid-area: navbar;
-                justify-content: center;
+                justify-content: space-between;
+                padding: 10px 20px;
             }
             .scorecard{
                 grid-area: scorecard;
