@@ -9,6 +9,24 @@
     font-family: solthin;
     src: url(solthinregular.ttf);
   }
+body{
+    
+        background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
+       
+    
+}
+
+.giveborderstop{
+  
+        text-align: center;
+        background-color: #0C2340;
+        color: black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
+    
+}
+
   .clash-text{
     font-family: 'solthin';
   }
@@ -26,7 +44,7 @@
   }
   
   .Navbar2{
-    height: auto;
+    height: 70px;
   }
   
   .logo{
@@ -48,6 +66,8 @@
   }
   .navbar{
     padding: 0;
+    height: 70px;
+    background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
   }
   .nav-link{
     padding: auto 40px;
@@ -129,7 +149,7 @@
     z-index: 2
 }
 .navbarr {
-    background-color: #005678;
+    background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
     margin: 0px;
     padding: 2px;
   /* background-color: #1f2833; */
@@ -155,7 +175,7 @@
     margin-bottom: 20px;
 }
 .my-btn:hover{
-    box-shadow:0px 0px 10px turquoise !important;
+    box-shadow:0px 0px 10px white !important;
 }
 .main-timeline5 .year {
     display: block;
@@ -163,9 +183,10 @@
     height: 110px;
     line-height: 110px;
     border-radius: 50%;
-    background-color: #ff2a6d;
+    background-color: white;
+    
     /* #FFFF00 */
-    box-shadow:0px 0px 10px turquoise;
+    box-shadow:0px 0px 10px white;
     font-size: 30px;
     font-weight: 700;
     /* font-family: 'Orbitron', sans-serif !important; */
@@ -177,7 +198,7 @@
 .main-timeline5 .timeline-content {
     width: 35%;
     float: right;
-    background: #0C2340;
+    background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
     padding: 30px 20px;
     margin: 50px 0;
     
@@ -189,7 +210,7 @@
     content: "";
     width: 20%;
     height: 15px;
-    background: #0C2340;
+    background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
     position: absolute;
     top: 50%;
     left: -20%;
@@ -202,7 +223,7 @@
     font-size: 30px;
     /* font-family: 'Orbitron', sans-serif !important; */
     font-weight: 900 !important;
-    color: #ff2a6d;
+    color: white;
     margin: 0 0 10px;
     text-shadow: 1px 1px white;
 }
@@ -211,7 +232,7 @@
     font-size: 30px;
     /* font-family: 'Orbitron', sans-serif !important; */
     font-weight: 900 !important;
-    color: #ff2a6d;
+    color: white;
     margin: 0 0 10px;
     text-shadow: 1px 1px white;
 }
@@ -219,7 +240,7 @@
 .main-timeline5 .description {
     font-size: 16px;
     /* font-family: 'Orbitron', sans-serif !important; */
-    color: turquoise;
+    color: white;
     line-height: 24px;
     margin: 0
 }
@@ -230,7 +251,7 @@
     border-top: 2px;
     border-style: solid;
     /* border-radius: 4px; */
-    border-color: #ff2a6d;
+    border-color: white;
 }
 .givebordersl{
     border-left: 10px;
@@ -239,7 +260,7 @@
     border-top: 2px;
     border-style: solid;
     /* border-radius: 4px; */
-    border-color: #ff2a6d;
+    border-color: white;
 }
 .giveborderstop{
     border-left: 10px;
@@ -248,7 +269,7 @@
     border-top: 2px;
     border-style: solid;
     /* border-radius: 4px; */
-    border-color: #ff2a6d;
+    border-color: white;
 }
 .givetextcolors{
     color: #d1f7ff;
@@ -281,7 +302,7 @@
 
 .main-timeline5 .timeline:nth-child(2n) .timeline-content,
 .main-timeline5 .timeline:nth-child(2n) .timeline-content:before {
-    background: #0C2340
+    background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
 }
 
 @media only screen and (max-width:1199px) {
@@ -362,20 +383,19 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: #fffff0;
-    font-size: larger;
-    font-style: italic;
-    font-weight: 600;
+    background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
+    
     max-width: -webkit-fill-available;
     flex-direction: row;
     position:absolute;
     background-color: #1a2433;
     bottom:0;
     position: relative;
+    height: 55px;
   }
   .footertext{
     font-size: 1.4rem;
-    color: #92e6ff;
+    color: white;
     align-items: center;
     align-self: center;
     margin-bottom: 0!important;
