@@ -102,6 +102,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
+    padding-bottom: 10vh;
 }
 .modal_in {
     display: none;/* Hidden by default */
@@ -502,7 +503,7 @@ input{
     position:absolute;
     background-color: #1a2433;
     bottom:0;
-    position: fixed;
+    position:fixed;
     background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
     height: 55px;
   }
