@@ -82,10 +82,10 @@
             <div class="extra">
                 <div class="q_attempted">
                     <div class="progress-bar">
-                        <svg class="progress" data-progress="10" x="0px" y="0px" viewBox="0 0 80 80">
+                        <svg class="progress1" data-progress="100" x="0px" y="0px" viewBox="0 0 80 80">
                         <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
-                        <text class="value" x="50%" y="55%">0%</text>
+                        <text class="value" x="50%" y="55%">451</text>
                         </svg>
                     </div>
                     <div class="progress-bar-title">
@@ -453,17 +453,47 @@
             fill: #f0f5f4;
             text-anchor: middle;
         }   
-            
+
+        /* not responsive */
+        .progress1 {
+            display: grid;
+            width: 140px;
+            height: 180px;
+            z-index: 0;
+            justify-content: center;
+            align-items: center;
+            background: inherit;
+            color: #f0f5f4;
+            /* background-image: linear-gradient(11deg, #000000 -76%, #26486a 280%); */
+    }
+        .progress1 .track, .progress1 .fill{
+            fill: rgba(0, 0, 0, 0);
+            stroke-width: 3;
+            transform: rotate(90deg)translate(0px, -80px);
+        }
+        .progress1 .track{
+            stroke: #03001C;
+        }
+        .progress1 .fill {
+            stroke: #f0f5f4;
+            stroke-dasharray: 219.99078369140625;
+            stroke-dashoffset: -219.99078369140625;
+            transition: stroke-dashoffset 3s;
+        }
+        .progress1 .value {
+            fill: #f0f5f4;
+            text-anchor: middle;
+        }   
         
         @media only screen and (max-width: 500px){
             .container{
             display: grid;
-            grid-template-rows: 15% 35% 55% 10%;
+            grid-template-rows: 15% 45% 55%;
             grid-template-areas:             
             'navbar'
             'scorecard'
-            'extra_items'
-            'footer';
+            'extra_items';
+            grid-gap: 10px;
             }
             .navbar{
                 grid-area: navbar;
@@ -574,6 +604,7 @@
                 padding-left: 20px;
                 padding-right: 20px;
                 align-items:center;
+                height: 400px;
             }
 
             .clash_head{
@@ -612,7 +643,7 @@
             }
 
 
-
+            /* responisv */
             .progress{
                 display: grid;
                 width: 85px;
@@ -637,6 +668,35 @@
                 transition: stroke-dashoffset 3s;
             }
             .progress .value {
+                fill: #B6EADA;
+                text-anchor: middle;
+            }
+
+            /* not responisive */
+            .progress1{
+                display: grid;
+                width: 85px;
+                height: 120px;
+                z-index: 1;
+                justify-content: center;
+                align-items: center; 
+                background-color: #301E67;
+            }
+            .progress1 .track, .progress1 .fill{
+                fill: rgba(0, 0, 0, 0);
+                stroke-width: 3;
+                transform: rotate(90deg)translate(0px, -80px);
+            }
+            .progress1 .track{
+                stroke: #03001C;
+            }
+            .progress1 .fill {
+                stroke: #f0f5f4;
+                stroke-dasharray: 219.99078369140625;
+                stroke-dashoffset: -219.99078369140625;
+                transition: stroke-dashoffset 3s;
+            }
+            .progress1 .value {
                 fill: #B6EADA;
                 text-anchor: middle;
             }
@@ -688,6 +748,16 @@
        value.querySelector('.value').innerHTML = percent + '%';
      });
    }
+
+   window.onload = function(){
+     var max = -219.99078369140625;
+     forEach(document.querySelectorAll('.progress1'), function (index, value) {
+     percent = value.getAttribute('data-progress');
+       value.querySelector('.fill').setAttribute('style', 'stroke-dashoffset: ' + ((100 - percent) / 100) * max);
+    //    value.querySelector('.value').innerHTML = percent + '%';
+     });
+   }
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
