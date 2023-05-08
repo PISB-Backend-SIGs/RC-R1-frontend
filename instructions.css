@@ -88,9 +88,12 @@ body{
 
   .navbar-nav {
     -ms-flex-direction: row;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     justify-content: flex-end;
+    position: relative;
+    z-index: 9;
+    background-color: #022d3e;
   }
   .DP{
     margin-top: 2px;

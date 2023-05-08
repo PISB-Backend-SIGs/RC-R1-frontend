@@ -42,6 +42,7 @@ body {
   .Navbar2{
     height: auto;
     height: 70px;
+    background-color:#0d0d1c;
   }
   
   .logo{
@@ -137,13 +138,17 @@ body {
       display: flex;
       align-items: center;
       /* background: #f8f8f8; */
-      width: 300px;
+      width: 320px;
       /* height: 1.6rem; */
-      padding: 8px;
-      border-radius: 20px;
-      /* border: 1.5px solid black; */
-      margin-left: 21rem;
+      padding: 8px 23px;
+      border-radius: 10px;
+      border: 1.5px solid rgb(3, 144, 144);
+      margin-left: 25rem;
       margin-bottom: 15px;
+      cursor: pointer;
+    }
+    .search:hover{
+      box-shadow: 1px 1px 7px rgb(3,144,144),-1px -1px 7px rgb(3,144,144),1px 1px 7px rgb(3,144,144);
     }
 
     .ri-search-line {
@@ -185,7 +190,7 @@ body {
       /* background-color: rgba(0, 0, 0, 0.1); */
       background-color: #0c111b;
       color: #ddd;
-      border: 3px solid #fff;
+      border: 3px solid #a2e0ff;
       box-shadow: 7px 7px 6px 0px black;
       font-size: 14px;
       text-transform: uppercase;
@@ -277,6 +282,9 @@ body {
   .pagination a:hover:not(.active) {color: black; background-color: white;}
     
     @media all and (max-width: 768px) {
+      body{
+        height: 100vh;
+      }
       .container{
         /* max-width: fit-content; */
         width: 100%;
@@ -375,7 +383,12 @@ body {
         margin-left: 80px;
         width: 25%;
         height: 10px;
+        border: none;
+        
       }
+       .search:hover{
+        box-shadow: none;
+       }
 
       .search input {
         width: 150px;
@@ -391,6 +404,10 @@ body {
       .ieeelogo{
         display: none;
       }
+      .footer{
+        bottom: 0;
+        position: relative;
+      }
  
     }
 
@@ -399,7 +416,7 @@ body {
       width: 100%;
       justify-content: center;
       background-image: linear-gradient(11deg, #000000 -76%, #2c3e50 280%);
-     
+      background-color:#0d0d1c;
       max-width: -webkit-fill-available;
       flex-direction: row;
       position:absolute;
